@@ -15,6 +15,6 @@ export class ChamberService {
     }
 
     async getDeputyExpenses(id: number, params?: Record<string, any>) {
-        return this.client.get(`/deputados/${id}/despesas`, { itens: 100, ...params });
+        return this.client.get(`/deputados/${id}/despesas`, params );
     }
 }
